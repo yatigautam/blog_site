@@ -1,0 +1,26 @@
+<html lang="en">
+    <%- include('./partials/header.ejs') %>
+
+<body>
+<div class ="site-title">
+    <a href ="/"><h1><u>Blog's pond</u></h1></a>
+</div>
+<%- include('./partials/nav') %>
+<div class= "create-blog content">
+
+    <form action = "/blogs" method = "POST">
+<b><label for="title">Blog title: </label></b>
+<input type="text" id= "title" name="title"   required >
+<b><label for ="snippet">Snippet :</label></b>
+<input type = "text" id ="snippet" name ="snippet" required>
+<b><label for = "body">Body area :</label></b>
+<textarea id = "body"  name = "body" required > </textarea>
+<button>Submit</button>
+
+    </form>
+</div>
+
+</body>
+<%- include('./partials/footer.ejs') %>
+
+</html>
